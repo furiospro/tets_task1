@@ -4,53 +4,6 @@
 	<meta charset="UTF-8">
 	<title>Test</title>
 	<link rel="stylesheet" href="test-style.css">
-	<script>
-
-document.addEventListener('DOMContentLoaded',function (event) {
-	function mathAction(itemOb) {
-		var form = new FormData(itemOb.closest('form'));
-		var val_1 = Number(form.get('val-1'));
-		var val_2 = Number(form.get('val-2'));
-		var id = document.getElementsByTagName('select')[0].selectedOptions[0].id;
-		switch (id){
-			case 'mul':
-				return (val_1 * val_2);
-				break;
-			case 'div':
-				if(val_2 !== 0 ){
-					return (val_1 / val_2);
-				}else {
-					return 'Деление на ноль';
-				}
-				break;
-			case 'sum':
-				return (val_1 + val_2);
-				break;
-			case 'sub':
-				return (val_1 - val_2);
-				break;
-		}
-	}
-
-	document.querySelectorAll('input').forEach(function(el){
-		el.oninput = function(event){
-			event.target.value =   event.target.value.replace(/[A-Za-zА-Яа-яЁё]/, '');
-		}
-	});
-
-	document.getElementById('form').addEventListener('change',function(){
-		var i = document.getElementsByTagName('input');
-		if(i[0].value !== "" && i[1].value !== "") {
-			document.getElementsByTagName('textarea')[0].value = mathAction(this);
-		}
-	});
-
-	document.getElementById('action').addEventListener('change',function(){
-			document.getElementsByTagName('textarea')[0].value =  mathAction(this)}
-		)
-
-})
-	</script>
 </head>
 <body>
 <header>
