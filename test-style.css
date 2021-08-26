@@ -1,0 +1,50 @@
+a,abbr,acronym,address,applet,article,aside,audio,b,blockquote,big,body,center,canvas,caption,cite,code,datalist,dd,del,details,dfn,dl,div,dt,em,embed,fieldset,figcaption,figure,font,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,keygen,label,legend,li,meter,nav,object,ol,output,p,pre,progress,q,s,samp,section,small,span,source,strike,strong,sub,sup,table,tbody,tfoot,thead,th,tr,tt,u,ul,var{background:transparent;border:0 none;font-size:100%;margin:0;padding:0;outline:0;vertical-align:top;}ol, ul {list-style:none;}blockquote, q {quotes:none;}table, table td {padding:0;border:none;border-collapse:collapse;}img {vertical-align:top;}embed {vertical-align:top;}
+article, aside, audio, canvas, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block;}
+mark, rp, rt, ruby, summary, time {display:inline;}
+input, textarea {border:0; padding:0; margin:0; outline: 0;}
+iframe {border:0; margin:0; padding:0;}
+input, textarea, select {margin:0; padding:0;}
+
+
+body{
+	background-color: lightgray;
+	height:100vh;
+
+}
+ul{
+	list-style-type: decimal;
+}
+header{
+	min-height: 50px;
+	border: 1px solid;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+}
+section{
+	height: calc(100% - 154px);
+}
+.container{
+	display:flex;
+	height:100%;
+}
+.marg{
+	margin: 20px 40px;
+}
+aside{
+	border: 1px solid;
+	min-width: 200px;
+	overflow:auto;
+}
+.content{
+	border: 1px solid;
+	width: 100%;
+	overflow:auto;
+}
+footer{
+	min-height: 100px;
+	border: 1px solid;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+}
