@@ -1,6 +1,5 @@
 <?php
 header('Content-type:image/jpeg');
-header('Content-type:image/jpeg');
 if(readfile('https://picsum.photos/447/300')){
 	$f_con = file_get_contents('test.txt');//Попытка прочитать файл. Если нет - получаем false если файла нет
 	$file = fopen('test.txt','w+');//Либо создается файл и открывается для записи и чтения
