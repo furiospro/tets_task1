@@ -17,9 +17,6 @@ ul{
 header{
 	min-height: 50px;
 	border: 1px solid;
-	/*display: flex;
-	justify-content: center;
-	align-items: center;*/
 }
 section{
 	height: calc(100% - 154px);
@@ -28,23 +25,7 @@ section{
 	display:flex;
 	height:100%;
 }
-.marg{
-	margin: 20px 40px;
-}
-aside{
-	border: 1px solid;
-	min-width: 200px;
-	overflow:auto;
-}
-.content{
-	border: 1px solid;
-	width: 100%;
-	overflow:auto;
-}
 footer{
 	min-height: 100px;
 	border: 1px solid;
-	/*display: flex;
-	justify-content: center;
-	align-items: center;*/
 }
